@@ -206,11 +206,12 @@ h1, h2, h3 { font-family: var(--font-display); letter-spacing: -.055em; }
   .nav-links-open { display: grid; }
   .nav-links a:not(.button) { padding: 13px 4px; }
   .nav-links .button { margin-top: 7px; }
-  .hero { padding: 49px 0 53px; }
+  .hero { padding: 43px 0 46px; }
   .hero-grid { min-height: auto; grid-template-columns: 1fr; }
-  .hero-copy h1 { max-width: 520px; font-size: clamp(47px, 13vw, 68px); }
+  .hero-copy h1 { max-width: 520px; font-size: clamp(35px, 9.5vw, 56px); line-height: 1.08; text-wrap: balance; }
   .hero-copy > p { font-size: 14px; }
-  .hero-visual { min-height: 335px; margin: -4px 0 -18px; transform: scale(.86); transform-origin: center top; }
+  .hero-actions .button { width: 100%; }
+  .hero-visual { min-height: 305px; margin: 3px 0 -14px; transform: scale(.82); transform-origin: center top; }
   .trusted-inner { flex-wrap: wrap; justify-content: center; padding: 19px 0; }
   .trusted-label { max-width: 100%; width: 100%; text-align: center; }
   .trusted-item { font-size: 11px; }

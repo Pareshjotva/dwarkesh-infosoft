@@ -10,12 +10,14 @@ export function WhatsAppInquiryForm() {
     const formData = new FormData(event.currentTarget);
     const name = String(formData.get("name") ?? "").trim();
     const email = String(formData.get("email") ?? "").trim();
+    const phone = String(formData.get("phone") ?? "").trim();
     const service = String(formData.get("service") ?? "").trim();
     const message = String(formData.get("message") ?? "").trim();
     const inquiry = [
       `Hello Dwarkesh Infosoft! I'd like to enquire about your IT services.`,
       `Name: ${name}`,
       `Email: ${email}`,
+      `Phone: ${phone}`,
       `Service: ${service}`,
       `Project details: ${message}`,
     ].join("\n");
@@ -36,6 +38,10 @@ export function WhatsAppInquiryForm() {
         <div className="form-field">
           <label htmlFor="email">Email address *</label>
           <input autoComplete="email" id="email" maxLength={254} name="email" placeholder="you@company.com" required type="email" />
+        </div>
+        <div className="form-field">
+          <label htmlFor="phone">Phone number *</label>
+          <input autoComplete="tel" id="phone" inputMode="tel" maxLength={25} name="phone" placeholder="+91 98765 43210" required type="tel" />
         </div>
         <div className="form-field form-field-full">
           <label htmlFor="service">What can we help with? *</label>
